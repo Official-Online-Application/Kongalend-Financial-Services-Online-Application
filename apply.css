@@ -1,0 +1,202 @@
+
+*{box-sizing: border-box;}
+body{
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#div1{
+    width: 105vw;
+    display: grid;
+    grid-template-columns: 70% 10% 10%;
+    column-gap: 5%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    box-shadow: 12px 12px 12px black;
+    position: sticky;
+    top: 0%;
+    left: -1%;
+    background-color: white;
+}
+#img1{
+    margin-left: 5%;
+    width: 40%;
+    margin-top: -6%;
+}
+#img1 img{
+    width: 120%;
+}
+#icon1,#icon2{
+   font-size: 450%; 
+   margin-top: -3%;
+}
+#div2{
+    color: white;
+    background-color: rgb(13, 166, 177);
+    width: 105%;
+    padding: 2%;
+    margin-top: -20%;
+    transition-duration: 2s;
+}
+#p4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 320%;
+    text-align: center;
+}
+#contact-form{
+    width: 105%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+#contact-form label{
+    font-size: 300%;
+}
+#contact-form input{
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #ccc;
+    margin-bottom: 9%;
+    font-size: 250%;
+    padding: 5%;
+    width: 100%;
+}
+#surname{
+    margin-top: -7%;
+}
+#terms{
+    border-radius: 25px;
+    border: 2px solid #bbb;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 3%;
+    margin-top: -40%;
+    margin-bottom: 20%;
+}
+#terms input[type='checkbox']{
+    background-color: rgb(13, 166, 177);
+    color: rgb(13, 166, 177);
+    margin-top: 3%;
+    /* font-size: 200%; */
+    width: 40%;
+    height: 80px;
+}
+#terms > label{
+    margin-top: 3%;
+}
+#form2{
+    padding: -8% 5% 5% 5%;
+}
+#form2 > p{
+    font-size: 250%;
+    border: 2px solid black; 
+    width: 50%; 
+    text-align: center;
+    padding: 3%;
+    border-radius: 25px;
+    margin-top: -10%;
+}
+#form2 > div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:   wrap;
+    margin-left: -105%;
+    width: 104vw;
+    transition-duration: 2s;
+    margin-top: -15%;
+
+}
+.zoomed{
+    transition-duration: 3s;
+    transform: scale(1.5); /* Zooms the div by 10% */
+    margin-top:12%;
+}
+input[type='submit']{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    background-color: rgb(13, 166, 177);
+    width: 100%;
+    /* margin-left: 25%; */
+    margin-top: 10%;
+    /* margin-bottom: 3%; */
+    border-radius: 15px;
+    padding: 10%;
+    position: relative;
+    /* animation-name: done; */
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-timing-function: ease-in-out;
+}
+input[type='submit']:hover{
+    color: rgb(13, 166, 177);
+    background-color: rgb(235, 187, 27);
+    /* background-color: rgb(64, 248, 8); */
+}
+#next, #continue{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+    background-color: rgb(13, 166, 177);
+    width: 100%;
+    text-align: center;
+    /* margin-left: 25%; */
+    margin-top: 25%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    padding: 5% 7%;
+    position: relative;
+
+}
+#continue:active{
+    background-color: rgb(235, 187, 27);
+    color: rgb(13, 166, 177);
+}
+#next:active{
+    background-color: rgb(235, 187, 27);
+    color: rgb(13, 166, 177);
+}
+
+
+
+
+
+
+
+
+#write{
+    padding: 2%;
+
+}
+#write-up {
+  
+    font-size: 180%;
+}
+#write-up div h3{
+    text-align: center;
+    color: red;
+    font-size: 90;
+}
+#failure{
+    text-align: center;
+    font-size: 205%;
+    color: red;
+}
+#why{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 1%;
+}
+
+#fail-write{
+    background-color: red;
+    font-size: 230%;
+}
+#successful{
+    font-size: 100%;
+    text-align: center;
+    margin-top: 25%;
+  }
